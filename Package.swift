@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "Punycode",
+    platforms: [
+        .iOS(.v11),
+        .watchOS(.v4),
+    ],
     products: [
         .library(
             name: "Punnycode",
@@ -19,5 +23,6 @@ let package = Package(
             name: "PunnycodeSwiftTests",
             dependencies: ["Punycode"],
             path: "Tests")
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
