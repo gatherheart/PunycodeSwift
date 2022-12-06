@@ -6,17 +6,17 @@ import PackageDescription
 let package = Package(
     name: "Punycode",
     platforms: [
-        .iOS(.v11),
+        .iOS(.v10),
         .watchOS(.v4),
     ],
     products: [
         .library(
-            name: "Punnycode",
-            targets: ["Punycode-iOS"])
+            name: "Punycode",
+            targets: ["Punycode"])
     ],
     targets: [
         .target(
-            name: "Punycode-iOS",
+            name: "Punycode",
             dependencies: [],
             path: "Source"),
         .testTarget(
