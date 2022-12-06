@@ -12,11 +12,11 @@ let package = Package(
     products: [
         .library(
             name: "Punnycode",
-            targets: ["Punycode"])
+            targets: ["Punycode-iOS"])
     ],
     targets: [
         .target(
-            name: "Punycode",
+            name: "Punycode-iOS",
             dependencies: [],
             path: "Source"),
         .testTarget(
